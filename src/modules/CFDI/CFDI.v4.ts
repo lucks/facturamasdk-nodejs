@@ -16,6 +16,7 @@ export class CFDIv4 implements ICFDIv4 {
   public CfdiType: string;
   public PaymentForm: string;
   public PaymentMethod: string;
+  public LogoUrl: string;
   public Issuer: Issuer;
   public Receiver: Receiver;
   public Items: Item[];
@@ -29,6 +30,7 @@ export class CFDIv4 implements ICFDIv4 {
     this.CfdiType = cfdi.CfdiType;
     this.PaymentForm = cfdi.PaymentForm;
     this.PaymentMethod = cfdi.PaymentMethod;
+    this.LogoUrl = cfdi.LogoUrl;
     this.Issuer = cfdi.Issuer;
     this.Receiver = cfdi.Receiver;
     this.Items = cfdi.Items;
@@ -48,6 +50,7 @@ export class CFDIv4 implements ICFDIv4 {
       CfdiType: this.CfdiType,
       PaymentForm: this.PaymentForm,
       PaymentMethod: this.PaymentMethod,
+      LogoUrl: this.LogoUrl,
       Issuer: this.Issuer,
       Receiver: this.Receiver,
       Items: this.Items,

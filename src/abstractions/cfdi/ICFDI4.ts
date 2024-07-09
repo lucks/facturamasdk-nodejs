@@ -13,6 +13,7 @@ export interface ICFDIv4 extends ISerializable {
   CfdiType: string;
   PaymentForm: string;
   PaymentMethod: string;
+  LogoUrl: string;
   Issuer: Issuer;
   Receiver: Receiver;
   Items: Item[];
